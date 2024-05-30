@@ -1,6 +1,7 @@
-package javai;
+package javai.model;
 
-public class Lambor implements Car {
+public class Benz implements Car {
+
 	private int speed;
 
 	public int getSpeed() {
@@ -17,11 +18,15 @@ public class Lambor implements Car {
 	}
 
 	public boolean stop() {
+		// TODO Auto-generated method stub
 		this.speed = 0;
 		return true;
 	}
 
+	@Override
 	public boolean isStart() {
+		// TODO Auto-generated method stub
 		return this.speed > 0;
 	}
+
 }
